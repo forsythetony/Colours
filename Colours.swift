@@ -870,8 +870,12 @@ public extension Color {
 public extension Color {
     
     
-    class func anohaPattern() {
-        return Color(patternImage: UIImage(named: "asanoha.png"))
+    class func anohaPattern() -> Color {
+        let someBundle : NSBundle = NSBundle(forClass: self )
+        
+        let patternImage : UIImage = UIImage(named: "asanoha.png" , inBundle: someBundle, compatibleWithTraitCollection: nil)!
+        
+        return Color(patternImage: patternImage)
     }
     
 }
