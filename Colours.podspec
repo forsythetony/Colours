@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
     ss.tvos.deployment_target = '9.0'
   	ss.osx.deployment_target = '10.9'
     ss.source_files = '*.swift'
-    ss.resources = ['*.png']	
+    ss.resource_bundle = { 'Colours' => 'ColoursDemo_Swift/ColoursSwift/ColoursSwift/Assets/*.png' }
   end
 
 end
