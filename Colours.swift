@@ -866,3 +866,12 @@ public extension Color {
         }
     }
 }
+
+public extension Color {
+    
+    
+    class func anohaPattern() {
+        return Color(patternImage: UIImage(named: "asanoha.png"))
+    }
+    
+}
